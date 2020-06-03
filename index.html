@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Portfolio Pro</title>
+
+        <!--CSS-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+        <link rel="stylesheet" href="src/css//main.css">
+        <!--CSS-->
+
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/f10753dc18.js" crossorigin="anonymous"></script>
+        <!--Fonts-->
+    </head>
+
+    <body>
+
+        <!--header-->
+        <div class="block">
+            <header class="header">
+                <a href="#" class="header-logo">Mon Portfolio Pro</a>
+                <nav class="header-menu">
+                    <a href="#">Accueil</a>
+                    <a href="#">A propos</a>
+                    <a href="#">Mes projets</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </header>
+        </div>
+        <!--header-->
+
+        <!--banner-->
+        <div class="block">
+            <div class="banner">
+                <img src="src/img/bg.jpg" alt="Un ordinateur avec du code posé sur une table" class="banner-image">
+                <div class="banner-content">
+                    <h1 class="title is-1">Bienvenue sur mon Portfolio Pro</h1>
+                    <h2 class="subtitle">Découvrez mes projets et mon univers !</h2>
+                    <button class="button is-link">Contactez-moi !</button>
+                </div>
+            </div>
+        </div>
+        <!--banner-->
+
+        <!--section : A propos-->
+        <h2 class="subtitle heading-site"> A propos</h2>
+        <div class="block">
+            <div class="container about">
+                <div class="columns">
+                    <div class="column about-single-element">
+                        <i class="fas fa-code"></i>
+                        <p>
+                            Je suis un jeune developpeur et suis actuellement dans mes études à Epitech.
+                        </p>
+                    </div>
+                    <div class="column about-single-element">
+                        <i class="fas fa-mountain"></i>
+                        <p>
+                            Grand passionné de la montagne et des activités diverses qu'elle propose.
+                        </p>
+                    </div>
+                    <div class="column about-single-element">
+                        <i class="fas fa-film"></i>
+                        <p class="movie">
+                            Cinéphile à mes heures perdus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--portfolio-->
+        <h2 class="subtitle heading-site">Mon Portfolio</h2>
+        <div class="block">
+            <div class="container">
+                <div class="tile is-ancestor">
+                    <div class="tile is-vertical is-8">
+                      <div class="tile">
+                        <div class="tile is-parent is-vertical">
+                          <article class="tile is-child notification is-primary">
+                            <p class="title">Projet réalisées</p>
+                            <p class="subtitle">Recoder les fonctions de la libC.
+                                Réalisation du jeux des allumettes.
+                                Réalisation de la bataille navale.
+                                Générer des labyrinthes et les résoudres.
+                            </p>
+                          </article>
+                          <article class="tile is-child notification is-warning">
+                            <p class="title">...tiles</p>
+                            <p class="subtitle">Bottom tile</p>
+                          </article>
+                        </div>
+                        <div class="tile is-parent">
+                          <article class="tile is-child notification is-info">
+                            <p class="title">Malo Le Moing</p>
+                            <figure class="image is-4by3">
+                              <img src="src/img/malo.jpg">
+                            </figure>
+                          </article>
+                        </div>
+                      </div>
+                      <div class="tile is-parent">
+                        <article class="tile is-child notification is-danger">
+                          <p class="title">Wide tile</p>
+                          <p class="subtitle">Aligned with the right tile</p>
+                          <div class="content">
+                            <!-- Content -->
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                    <div class="tile is-parent">
+                      <article class="tile is-child notification is-success">
+                        <div class="content">
+                          <p class="title">Présentation</p>
+                          <p class="subtitle me">Actuellement étudiant en 1ère année à Epitech.</p>
+                          <p class="subtitle me"> Passionné en informatique, je souhaite en apprendre d'avantage sur les différents langage de programation</p>
+                          <p class="subtitle me">Je suis actuellement à la recherche d'un stage de 4 à 6 mois en développement à partir du 1er Juillet 2020.</p>
+                          <div class="content">
+                            <!-- Content -->
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <!--portfolio-->
+
+        <!--contact-->
+        <div class="block">
+            <footer class="footer">
+                <h2 class="heading-site">Contactez-moi</h2>
+                <div class="footer-contact-form">
+                    <form>
+                        <div class="field">
+                            <label class="label">Votre Prénom</label>
+                            <div class="control">
+                              <input class="input" type="text" placeholder="ex: Kevin" name="name">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Votre nom</label>
+                            <div class="control">
+                              <input class="input" type="text" placeholder="ex: Roland" name="firstname">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Mail</label>
+                            <div class="control">
+                              <input class="input" type="text" placeholder="ex: kevin.roland@gmail.com" name="mail">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Message</label>
+                            <div class="control">
+                                <textarea class="textarea" placeholder="Votre message..." name="message"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                    <button class="button is-link is-send" id="send_email">Envoyer</button>
+                </div>
+                <div class="footer-informations">
+
+                </div>
+            </footer>
+        </div>
+
+        <!--contact-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="src/js/main.js"></script>
+    </body>
+
+</html>
