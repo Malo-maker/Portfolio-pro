@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="src/css//main.css">
         <!--CSS-->
 
+        <link rel="icon" href="src/img/logo.ico">
+
         <!--Fonts-->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/f10753dc18.js" crossorigin="anonymous"></script>
@@ -24,9 +26,9 @@
                 <a href="#" class="header-logo">Mon Portfolio Pro</a>
                 <nav class="header-menu">
                     <a href="#">Accueil</a>
-                    <a href="#">A propos</a>
-                    <a href="#">Mes projets</a>
-                    <a href="#">Contact</a>
+                    <a href="#about">A propos</a>
+                    <a href="#project">Mes projets</a>
+                    <a href="#contact">Contact</a>
                 </nav>
             </header>
         </div>
@@ -39,14 +41,14 @@
                 <div class="banner-content">
                     <h1 class="title is-1">Bienvenue sur mon Portfolio Pro</h1>
                     <h2 class="subtitle">Découvrez mes projets et mon univers !</h2>
-                    <button class="button is-link">Contactez-moi !</button>
+                    <button class="button is-link" onclick="window.location.href = '#contact'">Contactez-moi !</button>
                 </div>
             </div>
         </div>
         <!--banner-->
 
         <!--section : A propos-->
-        <h2 class="subtitle heading-site"> A propos</h2>
+        <h2 class="subtitle heading-site" id="about"> A propos</h2>
         <div class="block">
             <div class="container about">
                 <div class="columns">
@@ -73,7 +75,7 @@
         </div>
 
         <!--portfolio-->
-        <h2 class="subtitle heading-site">Mon Portfolio</h2>
+        <h2 class="subtitle heading-site" id="project">Mon Portfolio</h2>
         <div class="block">
             <div class="container">
                 <div class="tile is-ancestor">
@@ -82,15 +84,17 @@
                         <div class="tile is-parent is-vertical">
                           <article class="tile is-child notification is-primary">
                             <p class="title">Projet réalisées</p>
-                            <p class="subtitle">Recoder les fonctions de la libC.
-                                Réalisation du jeux des allumettes.
-                                Réalisation de la bataille navale.
-                                Générer des labyrinthes et les résoudres.
-                            </p>
+                            <p class="subtitle">Recoder les fonctions de la libC.</p>
+                            <p class="subtitle">Réalisation du jeux des allumettes.</p>
+                            <p class="subtitle">Réalisation de la bataille navale.</p>
+                            <p class="subtitle">Générer des labyrinthes et les résoudres.</p>
                           </article>
                           <article class="tile is-child notification is-warning">
-                            <p class="title">...tiles</p>
-                            <p class="subtitle">Bottom tile</p>
+                            <p class="title">Compétences</p>
+                            <p class="subtitle">C  ++++</p>
+                            <p class="subtitle">Python  +++</p>
+                            <p class="subtitle">Git  +++</p>
+                            <p class="subtitle">Anglais  +++</p>
                           </article>
                         </div>
                         <div class="tile is-parent">
@@ -104,8 +108,13 @@
                       </div>
                       <div class="tile is-parent">
                         <article class="tile is-child notification is-danger">
-                          <p class="title">Wide tile</p>
-                          <p class="subtitle">Aligned with the right tile</p>
+                          <p class="title">Expériences</p>
+                          <p class="subtitle">Stage 3ème : Intermarche d'une semaine</p>
+                          <p class="subtitle">Mise en rayon, récupération des livraisons, gestion des rayons boulangerie et surgelée.</p>
+                          <p class="subtitle">Stage 2nd : Agoravita de deux semaines</p>
+                          <p class="subtitle">Préparation des nouveaux ordinateurs, installation setup des bureau.</p>
+                          <p class="subtitle">Stage 1ere : Juvamine de trois jours</p>
+                          <p class="subtitle">Vente de produits, gestion des rayons en supermarché et réapprovisionnement.</p>
                           <div class="content">
                             <!-- Content -->
                           </div>
@@ -134,7 +143,7 @@
         <!--contact-->
         <div class="block">
             <footer class="footer">
-                <h2 class="heading-site">Contactez-moi</h2>
+                <h2 class="heading-site" id="contact">Contactez-moi</h2>
                 <div class="footer-contact-form">
                     <form>
                         <div class="field">
@@ -172,7 +181,6 @@
 
         <!--contact-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-        <script src="src/js/main.js"></script>
     </body>
 
 </html>
